@@ -1,6 +1,20 @@
 import hello from "../../assets/hello.svg";
 import Charts from "../charts/Charts";
+import { Chart } from "react-google-charts";
 import "./Main.css";
+export const data = [
+  ["Task", "Hours per Day"],
+  ["Combustível", 11],
+  ["Compras", 2],
+  ["Fábrica", 2],
+  ["Oficina", 2],
+  ["Energigia", 7],
+];
+
+export const options = {
+  title: "My Daily Activities",
+  is3D: true,
+};
 
 const Main = () => {
   return (
@@ -27,7 +41,7 @@ const Main = () => {
             <i className="fa fa-sign-in fa-2x text-lightblue"></i>
             <p className="text-primary-p">Entrada</p>
             <div className="card_inner">
-            <p className="font-bold text-title ">R$</p>
+              <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">15.000,00</span>
             </div>
           </div>
@@ -35,7 +49,7 @@ const Main = () => {
             <i className="fa fa-sign-out fa-2x text-red"></i>
             <p className="text-primary-p">Saída</p>
             <div className="card_inner">
-            <p className="font-bold text-title ">R$</p>
+              <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">45.000,00</span>
             </div>
           </div>
@@ -43,7 +57,7 @@ const Main = () => {
             <i className="fa fa-money fa-2x text-green"></i>
             <p className="text-primary-p">Saldo atual (-4%)</p>
             <div className="card_inner">
-            <p className="font-bold text-title ">R$</p>
+              <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">200.000,00</span>
             </div>
           </div>
@@ -52,7 +66,7 @@ const Main = () => {
           <div className="charts__left">
             <div className="charts__left__title">
               <div>
-              <h1>Saldo</h1>
+                <h1>Saldo</h1>
                 <p>Variação do saldo em função do tempo estipulado</p>
               </div>
               <i className="fa fa-usd"></i>
@@ -67,7 +81,14 @@ const Main = () => {
               </div>
               <i className="fa fa-area-chart"></i>
             </div>
-            <div className="charts__right__cards">
+            <Chart
+              chartType="PieChart"
+              data={data}
+              options={options}
+              width={"100%"}
+              height={"400px"}
+            />
+            {/* <div className="charts__right__cards">
               <div className="card1">
                 <h1>Lucro</h1>
                 <p>R$2500</p>
@@ -86,7 +107,7 @@ const Main = () => {
                 <h1>Banco de dados</h1>
                 <p>R$180,00</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
