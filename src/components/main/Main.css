@@ -3,7 +3,11 @@ main {
     grid-area: main;
     overflow-y: auto;
 }
-
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .main__container {
     padding: 20px 35px;
 }
@@ -183,6 +187,12 @@ main {
 
 @media only screen and (max-width: 855px) {
     .main__cards{
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+    .hero{
+        display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
         margin-bottom: 0;

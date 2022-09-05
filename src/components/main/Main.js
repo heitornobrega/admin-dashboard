@@ -13,21 +13,30 @@ export const data = [
 
 export const options = {
   is3D: true,
-  backgroundColor: '#f3f4f6',
+  backgroundColor: "#f3f4f6",
 };
 
 const Main = () => {
   return (
     <main>
       <div className="main__container">
+        <div className="hero">
         <div className="main__title">
           <img src={hello} alt="hello" />
           <div className="main__greeting">
             <h1>Olá usuário</h1>
             <p>Bem vindo ao seu painel</p>
           </div>
-
         </div>
+        <div className="period__card">
+            <div className="main__greeting">
+              <p>Selecione o período de análise</p>
+            </div>
+            <input type="date" />
+            à
+            <input type="date" />
+          </div>
+          </div>
 
         <div className="main__cards">
           <div className="card">

@@ -44,7 +44,9 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/material": "^5.10.3",
+    "date-fns": "^2.29.2",
     "gh-pages": "^4.0.0",
+    "react-date-range": "^1.4.0",
     "rsuite": "^5.17.1"
   }
 }
