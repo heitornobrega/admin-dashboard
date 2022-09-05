@@ -42,6 +42,11 @@ main {
     margin: 20px 0;
 }
 
+.period__card {
+    height: 15px;
+    padding: 25px;
+}
+
 .card {
     display: flex;
     flex-direction: column;
