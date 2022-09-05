@@ -8,12 +8,12 @@ export const data = [
   ["Compras", 2],
   ["Fábrica", 2],
   ["Oficina", 2],
-  ["Energigia", 7],
+  ["Energia", 7],
 ];
 
 export const options = {
-  title: "My Daily Activities",
   is3D: true,
+  backgroundColor: '#f3f4f6',
 };
 
 const Main = () => {
@@ -26,6 +26,7 @@ const Main = () => {
             <h1>Olá usuário</h1>
             <p>Bem vindo ao seu painel</p>
           </div>
+
         </div>
 
         <div className="main__cards">
