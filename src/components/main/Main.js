@@ -17,7 +17,7 @@ const Main = () => {
         <div className="main__cards">
           <div className="card">
             <i className="fa fa-money fa-2x text-green"></i>
-            <p className="text-primary-p">Saldo inicial</p>
+            <p className="text-primary-p">Saldo inicial (-4%)</p>
             <div className="card_inner">
               <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">230.000,00</span>
@@ -41,7 +41,7 @@ const Main = () => {
           </div>
           <div className="card">
             <i className="fa fa-money fa-2x text-green"></i>
-            <p className="text-primary-p">Saldo atual</p>
+            <p className="text-primary-p">Saldo atual (-4%)</p>
             <div className="card_inner">
             <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">200.000,00</span>
@@ -52,8 +52,8 @@ const Main = () => {
           <div className="charts__left">
             <div className="charts__left__title">
               <div>
-              <h1>Fluxo de caixa</h1>
-                <p>Fluxo no primeiro semestre de 2022</p>
+              <h1>Saldo</h1>
+                <p>Variação do saldo em função do tempo estipulado</p>
               </div>
               <i className="fa fa-usd"></i>
             </div>
@@ -62,8 +62,8 @@ const Main = () => {
           <div className="charts__right">
             <div className="charts__right__title">
               <div>
-                <h1>Fluxo de caixa</h1>
-                <p>Fluxo no primeiro semestre de 2022</p>
+                <h1>Centros de custo</h1>
+                <p>Impacto relativo sobre o perído estipulado</p>
               </div>
               <i className="fa fa-area-chart"></i>
             </div>
