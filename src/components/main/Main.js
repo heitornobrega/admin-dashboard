@@ -21,22 +21,23 @@ const Main = () => {
     <main>
       <div className="main__container">
         <div className="hero">
-        <div className="main__title">
-          <img src={hello} alt="hello" />
-          <div className="main__greeting">
-            <h1>Olá usuário</h1>
-            <p>Bem vindo ao seu painel</p>
-          </div>
-        </div>
-        <div className="period__card">
+          <div className="main__title">
+            <img src={hello} alt="hello" />
             <div className="main__greeting">
-              <p>Selecione o período de análise</p>
+              <h1>Olá usuário</h1>
+              <p>Bem vindo ao seu painel</p>
             </div>
+          </div>
+          <div className="period__card">
+            <p>Selecione o período de análise</p>
+            <div className="date__container">
             <input type="date" />
             à
             <input type="date" />
+            </div>
+
           </div>
-          </div>
+        </div>
 
         <div className="main__cards">
           <div className="card">
