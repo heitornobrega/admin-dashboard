@@ -47,6 +47,7 @@
     "date-fns": "^2.29.2",
     "gh-pages": "^4.0.0",
     "react-date-range": "^1.4.0",
+    "react-icons": "^4.4.0",
     "rsuite": "^5.17.1"
   }
 }

@@ -1,6 +1,9 @@
 import hello from "../../assets/hello.svg";
 import Charts from "../charts/Charts";
 import { Chart } from "react-google-charts";
+import { IconContext } from "react-icons";
+import { BsCoin } from "react-icons/bs";
+import { TbBackhoe } from "react-icons/tb";
 import "./Main.css";
 export const data = [
   ["Task", "Hours per Day"],
@@ -31,11 +34,10 @@ const Main = () => {
           <div className="period__card">
             <p>Selecione o período de análise</p>
             <div className="date__container">
-            <input type="date" />
-            à
-            <input type="date" />
+              <input type="date" />
+              à
+              <input type="date" />
             </div>
-
           </div>
         </div>
 
@@ -70,6 +72,33 @@ const Main = () => {
             <div className="card_inner">
               <p className="font-bold text-title ">R$</p>
               <span className="font-bold text-title">200.000,00</span>
+            </div>
+          </div>
+          <div className="card">
+            {/* <i className="fa fa-money fa-2x text-green"></i>
+             */}
+            <IconContext.Provider value={{ color: "green", size: "30px" }}>
+              <div>
+                <TbBackhoe />
+              </div>
+            </IconContext.Provider>
+            <p className="text-primary-p">Produção</p>
+            <div className="card_inner">
+              <p className="font-bold text-title ">Ton</p>
+              <span className="font-bold text-title">300,00</span>
+            </div>
+          </div>
+          <div className="card">
+            {/* <i className="fa fa-money fa-2x text-green"></i> */}
+            <IconContext.Provider value={{ color: "yellow", size: "30px" }}>
+              <div>
+                <BsCoin />
+              </div>
+            </IconContext.Provider>
+            <p className="text-primary-p">Custo por Tonelada</p>
+            <div className="card_inner">
+              <p className="font-bold text-title ">R$/Ton</p>
+              <span className="font-bold text-title">60,00</span>
             </div>
           </div>
         </div>
