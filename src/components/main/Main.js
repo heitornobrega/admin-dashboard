@@ -5,13 +5,14 @@ import { IconContext } from "react-icons";
 import { BsCoin } from "react-icons/bs";
 import { TbBackhoe } from "react-icons/tb";
 import "./Main.css";
+
 export const data = [
   ["Task", "Hours per Day"],
-  ["Combustível", 11],
-  ["Compras", 2],
-  ["Fábrica", 2],
-  ["Oficina", 2],
-  ["Energia", 7],
+  ["Fuel", 11],
+  ["Shopping", 2],
+  ["Factory", 2],
+  ["Workshop", 2],
+  ["Energy", 7],
 ];
 
 export const options = {
@@ -27,15 +28,15 @@ const Main = () => {
           <div className="main__title">
             <img src={hello} alt="hello" />
             <div className="main__greeting">
-              <h1>Olá usuário</h1>
-              <p>Bem vindo ao seu painel</p>
+              <h1>Hello User</h1>
+              <p>Welcome to your dashboard</p>
             </div>
           </div>
           <div className="period__card">
-            <p>Selecione o período de análise</p>
+            <p>Select the analysis period</p>
             <div className="date__container">
               <input type="date" />
-              à
+              to
               <input type="date" />
             </div>
           </div>
@@ -44,61 +45,58 @@ const Main = () => {
         <div className="main__cards">
           <div className="card">
             <i className="fa fa-money fa-2x text-green"></i>
-            <p className="text-primary-p">Saldo inicial (-4%)</p>
+            <p className="text-primary-p">Initial Balance (-4%)</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">R$</p>
-              <span className="font-bold text-title">230.000,00</span>
+              <p className="font-bold text-title">US$</p>
+              <span className="font-bold text-title">230,000.00</span>
             </div>
           </div>
           <div className="card">
             <i className="fa fa-sign-in fa-2x text-lightblue"></i>
-            <p className="text-primary-p">Entrada</p>
+            <p className="text-primary-p">Income</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">R$</p>
-              <span className="font-bold text-title">15.000,00</span>
+              <p className="font-bold text-title">US$</p>
+              <span className="font-bold text-title">15,000.00</span>
             </div>
           </div>
           <div className="card">
             <i className="fa fa-sign-out fa-2x text-red"></i>
-            <p className="text-primary-p">Saída</p>
+            <p className="text-primary-p">Expense</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">R$</p>
-              <span className="font-bold text-title">45.000,00</span>
+              <p className="font-bold text-title">US$</p>
+              <span className="font-bold text-title">45,000.00</span>
             </div>
           </div>
           <div className="card">
             <i className="fa fa-money fa-2x text-green"></i>
-            <p className="text-primary-p">Saldo atual (-4%)</p>
+            <p className="text-primary-p">Current Balance (-4%)</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">R$</p>
-              <span className="font-bold text-title">200.000,00</span>
+              <p className="font-bold text-title">US$</p>
+              <span className="font-bold text-title">200,000.00</span>
             </div>
           </div>
           <div className="card">
-            {/* <i className="fa fa-money fa-2x text-green"></i>
-             */}
             <IconContext.Provider value={{ color: "green", size: "30px" }}>
               <div>
                 <TbBackhoe />
               </div>
             </IconContext.Provider>
-            <p className="text-primary-p">Produção</p>
+            <p className="text-primary-p">Production</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">Ton</p>
-              <span className="font-bold text-title">300,00</span>
+              <p className="font-bold text-title">Ton</p>
+              <span className="font-bold text-title">300.00</span>
             </div>
           </div>
           <div className="card">
-            {/* <i className="fa fa-money fa-2x text-green"></i> */}
             <IconContext.Provider value={{ color: "yellow", size: "30px" }}>
               <div>
                 <BsCoin />
               </div>
             </IconContext.Provider>
-            <p className="text-primary-p">Custo por Tonelada</p>
+            <p className="text-primary-p">Cost per Ton</p>
             <div className="card_inner">
-              <p className="font-bold text-title ">R$/Ton</p>
-              <span className="font-bold text-title">60,00</span>
+              <p className="font-bold text-title">US$/Ton</p>
+              <span className="font-bold text-title">60.00</span>
             </div>
           </div>
         </div>
@@ -106,8 +104,8 @@ const Main = () => {
           <div className="charts__left">
             <div className="charts__left__title">
               <div>
-                <h1>Saldo</h1>
-                <p>Variação do saldo em função do tempo estipulado</p>
+                <h1>Balance</h1>
+                <p>Balance variation over the specified time</p>
               </div>
               <i className="fa fa-usd"></i>
             </div>
@@ -116,8 +114,8 @@ const Main = () => {
           <div className="charts__right">
             <div className="charts__right__title">
               <div>
-                <h1>Centros de custo</h1>
-                <p>Impacto relativo sobre o perído estipulado</p>
+                <h1>Cost Centers</h1>
+                <p>Relative impact over the specified period</p>
               </div>
               <i className="fa fa-area-chart"></i>
             </div>
@@ -128,26 +126,6 @@ const Main = () => {
               width={"100%"}
               height={"400px"}
             />
-            {/* <div className="charts__right__cards">
-              <div className="card1">
-                <h1>Lucro</h1>
-                <p>R$2500</p>
-              </div>
-              <div className="card2">
-                <h1>Pagamentos</h1>
-                <p>R$250,00</p>
-              </div>
-
-              <div className="card3">
-                <h1>Custos de hospedagens</h1>
-                <p>R$2500</p>
-              </div>
-
-              <div className="card4">
-                <h1>Banco de dados</h1>
-                <p>R$180,00</p>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

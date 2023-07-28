@@ -5,12 +5,12 @@ const Navbar = ({ openSidebar, sidebarOpen }) => {
   return (
     <nav className="navbar">
       <div className="nav_icon" onClick={() => openSidebar()}>
-      <i class="fa fa-bars" aria-hidden="true"></i>
+        <i className="fa fa-bars" aria-hidden="true"></i>
       </div>
 
       <div className="navbar__left">
-        <a href="#">Produtos</a>
-        <a href="#">Usuários</a>
+        <a href="#">Products</a>
+        <a href="#">Users</a>
         <a href="#" className="active_link">
           Admin
         </a>

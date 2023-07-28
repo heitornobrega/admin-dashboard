@@ -7,7 +7,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
       <div className="sidebar__title">
         <div className="sidebar__img">
           <img src={logo} alt="logo" />
-          <h1>Calcário <br /> Razzera </h1>
+          <h1>Mining corp.</h1>
         </div>
         <i
           onClick={() => closeSidebar()}
@@ -21,40 +21,40 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           <i className="fa fa-minus-square"></i>
           <a href="#">Home</a>
         </div>
-        <h2>Centros de custos</h2>
+        <h2>Cost Centers</h2>
         <div className="sidebar__link">
           <i className="fa fa-diamond"></i>
-          <a href="#">Extração</a>
+          <a href="#">Extraction</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-bolt"></i>
-          <a href="#">Energia</a>
+          <a href="#">Energy</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-wrench"></i>
-          <a href="#">Oficina</a>
+          <a href="#">Workshop</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-shopping-cart"></i>
-          <a href="#">Compras</a>
+          <a href="#">Purchases</a>
         </div>
         <div className="sidebar__link">
           <i className="fa fa-industry"></i>
-          <a href="#">Fábrica</a>
-              </div>
+          <a href="#">Factory</a>
+        </div>
         <div className="sidebar__link">
           <i className="fa fa-tachometer"></i>
-          <a href="#">Combustível</a>
-              </div>
-              <div className="sidebar__link">
+          <a href="#">Fuel</a>
+        </div>
+        <div className="sidebar__link">
           <i className="fa fa-truck"></i>
-          <a href="#">Máquinas</a>
-              </div>
-              <div className="sidebar__link">
+          <a href="#">Machinery</a>
+        </div>
+        <div className="sidebar__link">
           <i className="fa fa-users"></i>
-          <a href="#">Funcionários</a>
-              </div>
-              <div className="sidebar__logout">
+          <a href="#">Employees</a>
+        </div>
+        <div className="sidebar__logout">
           <i className="fa fa-power-off"></i>
           <a href="#">Log out</a>
         </div>
@@ -62,6 +62,5 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
     </div>
   );
 };
-
 
 export default Sidebar;
