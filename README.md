@@ -1,7 +1,5 @@
 # Administrative Dashboard for Mining Company
 
-![Mining Dashboard](dashboard_screenshot.png)
-
 Welcome to the repository of the Administrative Dashboard for Mining Company! This project is a sample administrative dashboard designed to meet the specific needs of a mining company. It was built using React and Google Charts technologies and is fully open-source. This version it's not 100% functional to prevent copyright issues, but it's a good boilerplate for developers.
 
 ## Overview
