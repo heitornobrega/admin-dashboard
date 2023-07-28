@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# Administrative Dashboard for Mining Company
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Mining Dashboard](dashboard_screenshot.png)
 
-## Available Scripts
+Welcome to the repository of the Administrative Dashboard for Mining Company! This project is a sample administrative dashboard designed to meet the specific needs of a mining company. It was built using React and Google Charts technologies and is fully open-source. This version it's not 100% functional to prevent copyright issues, but it's a good boilerplate for developers.
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+The main goal of this project was to provide for a mining company an intuitive and informative interface to track and analyze their operational and production data. The Administrative Dashboard presents essential information about business is designed to assist the management team in making more informed and strategic decisions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The Administrative Dashboard comes with several functionalities and features that contribute to better data understanding and more efficient analysis. Some of the key features include:
 
-### `npm test`
+- Data Visualizations: The use of the Google Charts package allows for the creation of interactive and visually appealing charts and tables, providing a clear and detailed view of the company's key performance indicators.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Customizable Dashboards: The dashboards are fully customizable, allowing users to configure the data display based on their specific preferences and needs.
 
-### `npm run build`
+- Executive Summary: The dashboard displays an executive summary with the main numbers for the day, week, or month, giving an instant view of the company's current performance.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Exportable Reports: The data displayed on the dashboard can be exported in various formats such as CSV or PDF for more in-depth analysis or sharing with other team members.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run the Administrative Dashboard on your local machine for development purposes, follow the steps below:
 
-### `npm run eject`
+1. Make sure you have Node.js installed on your machine.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Clone this repository using the command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/your-username/dashboard-mining.git
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Access the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd dashboard-mining
+```
 
-## Learn More
+4. Install the project dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Start the development server:
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. Open the application in your browser by accessing the URL:
 
-### Analyzing the Bundle Size
+```
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+This project is open-source and welcomes contributions from the community. If you wish to collaborate and enhance the Administrative Dashboard, follow the steps below:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Fork this repository.
 
-### Advanced Configuration
+2. Create a new branch with your modification:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git checkout -b my-feature
+```
 
-### Deployment
+3. Make desired changes and commit them:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+git commit -m "Adding my-feature"
+```
 
-### `npm run build` fails to minify
+4. Push the changes to your remote repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git push origin my-feature
+```
+
+5. Open a Pull Request to this repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any questions, suggestions, or issues, feel free to reach out through the [Issues](https://github.com/heitornobrega/admin-dashboard) of this repository.
+
+---
+
+Thank you for using the Administrative Dashboard for Mining Company! We hope this project proves to be valuable and aids in optimizing the company's activities.
