@@ -12,11 +12,7 @@ The Administrative Dashboard comes with several functionalities and features tha
 
 - Data Visualizations: The use of the Google Charts package allows for the creation of interactive and visually appealing charts and tables, providing a clear and detailed view of the company's key performance indicators.
 
-- Customizable Dashboards: The dashboards are fully customizable, allowing users to configure the data display based on their specific preferences and needs.
-
 - Executive Summary: The dashboard displays an executive summary with the main numbers for the day, week, or month, giving an instant view of the company's current performance.
-
-- Exportable Reports: The data displayed on the dashboard can be exported in various formats such as CSV or PDF for more in-depth analysis or sharing with other team members.
 
 ## Installation
 
@@ -27,13 +23,13 @@ To run the Administrative Dashboard on your local machine for development purpos
 2. Clone this repository using the command:
 
 ```bash
-git clone https://github.com/your-username/dashboard-mining.git
+git clone https://github.com/heitornobrega/admin-dashboard.git
 ```
 
 3. Access the project directory:
 
 ```bash
-cd dashboard-mining
+cd admin-dashboard
 ```
 
 4. Install the project dependencies:
